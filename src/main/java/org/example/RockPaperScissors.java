@@ -22,7 +22,6 @@ package org.example;
 //        +-------------+--------------+--------------+--------------+
 
 
-
 import java.util.Random;
 import java.util.Scanner;
 
@@ -34,7 +33,9 @@ public class RockPaperScissors {
         Random rand = new Random();
 
         while (true) {
-            playerWins = 0; computerWins = 0; ties = 0;
+            playerWins = 0;
+            computerWins = 0;
+            ties = 0;
             System.out.print("Number of rounds: ");
             rounds = s.nextInt();
             if (rounds < 1 || rounds > 10) {
@@ -46,7 +47,7 @@ public class RockPaperScissors {
                 System.out.print("Choose between 1 = Rock, 2 = Paper, 3 = Scissors: ");
                 playerChoice = s.nextInt();
                 computerChoice = rand.nextInt(3);
-                switch (playerChoice - computerChoice){
+                switch (playerChoice - computerChoice) {
                     case 0:
                     case 3:
                         System.out.print("You lost! ");
@@ -67,9 +68,9 @@ public class RockPaperScissors {
 
             }
 
-            if (playerWins<computerWins)
+            if (playerWins < computerWins)
                 System.out.println("Computer won the overall game");
-            else if (playerWins>computerWins)
+            else if (playerWins > computerWins)
                 System.out.println("You won the overall game");
             else
                 System.out.println("The overall game is a tie");
