@@ -36,10 +36,10 @@ public class RockPaperScissors {
             playerWins = 0;
             computerWins = 0;
             ties = 0;
-            System.out.print("Number of rounds: ");
+            System.out.print("Number of rounds(1, 10): ");
             rounds = s.nextInt();
             if (rounds < 1 || rounds > 10) {
-                System.out.println("Wrong number of rounds");
+                System.out.printf("%d is out of range(1, 10)\n", rounds);
                 return;
             }
 
