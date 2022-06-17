@@ -1,4 +1,4 @@
-package org.example;
+package com.m3.c242;
 
 //        +=============+=========+==========+=============+
 //        |     -       | Rock(0) | Paper(1) | Scissors(2) |

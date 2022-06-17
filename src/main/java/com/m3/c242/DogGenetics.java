@@ -1,4 +1,4 @@
-package org.example;
+package com.m3.c242;
 
 import java.util.Random;
 import java.util.Scanner;

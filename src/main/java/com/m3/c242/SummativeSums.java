@@ -1,4 +1,4 @@
-package org.example;
+package com.m3.c242;
 
 public class SummativeSums {
     public static void main(String[] args) {
