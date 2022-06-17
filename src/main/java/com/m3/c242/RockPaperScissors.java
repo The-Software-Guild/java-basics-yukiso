@@ -68,12 +68,9 @@ public class RockPaperScissors {
 
             }
 
-            if (playerWins < computerWins)
-                System.out.println("Computer won the overall game");
-            else if (playerWins > computerWins)
-                System.out.println("You won the overall game");
-            else
-                System.out.println("The overall game is a tie");
+            if (playerWins < computerWins) System.out.println("Computer won the overall game");
+            else if (playerWins > computerWins) System.out.println("You won the overall game");
+            else System.out.println("The overall game is a tie");
             System.out.printf("User wins: %d ;Computer wins: %d ;Ties: %d\n", playerWins, computerWins, ties);
 
             System.out.print("Play next?(Yes/No) ");
